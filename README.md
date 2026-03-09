@@ -20,3 +20,7 @@ This is my attempt to escape the AI-first ecosystem and try something that works
 2. Write clean and maintainable code 
 3. Make fewer mistakes 
 4. Learn how to use Linux, and generally learn how my system works
+
+## Reference Links
+
+Nvim LSP configs: https://github.com/neovim/nvim-lspconfig/tree/master/lsp
