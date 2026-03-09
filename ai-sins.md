@@ -1,4 +1,12 @@
-## 2026-03-09
+# AI Sins
 
+This is a place to document egregious mistakes that I have personally experienced AI making.
+
+This serves as anecdotal evidence about how careful you need to be when using gen AI tools.
+
+## Records
+
+2026-03-09
 Asked chatGPT about formatters and linters in neovim.
 It recommended I set up a plugin called "null-ls" - which has been archived for 3 years now...
+
