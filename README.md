@@ -1,9 +1,22 @@
-# What This Is
+# What This Repo Is
 
-I'm learning how to use NeoVim
+This is my attempt at learning how to use NeoVim.
 
-This is an attempt to try a new workflow that is not heavily tied to tools like VSCode
+I've only ever used VSCode and other IDEs.
 
-I want to find new ways to be productive when writing code, learn something new, and enjoy doing it
+But I'm wanting to try something new.
 
-My goal is to eventually commit to switching from a full IDE to NeoVim, to try something new
+I've been learning how to use vim motions using a VSCode extension.
+
+But I want to try making the leap to use NeoVim as my primary text editor.
+
+In today's software ecosystem, AI is getting shoved into literally every tool.
+
+This is my attempt to escape the AI-first ecosystem and try something that works for me.
+
+## Goals
+
+1. Find new ways to be productive without use of AI
+2. Write clean and maintainable code 
+3. Make fewer mistakes 
+4. Learn how to use Linux, and generally learn how my system works
