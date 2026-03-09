@@ -1,8 +1,8 @@
 # AI Sins
 
-This is a place to document egregious mistakes that I have personally experienced AI making.
+This is a place to document egregious mistakes that I have personally experienced AI make.
 
-This serves as anecdotal evidence about how careful you need to be when using gen AI tools.
+This serves as anecdotal evidence about how careful you should be when using gen AI tools.
 
 ## Records
 
