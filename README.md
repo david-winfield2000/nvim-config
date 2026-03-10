@@ -42,7 +42,3 @@ Situations that I've found LLMs to be incredible at handling:
 
 Basically, there are times when there's value in getting something done quickly. And there are even more times when there's more value in getting something done correctly.
 
-
-## Reference Links
-
-Nvim LSP configs: https://github.com/neovim/nvim-lspconfig/tree/master/lsp
