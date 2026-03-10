@@ -6,10 +6,10 @@ This serves as anecdotal evidence about how careful you should be when using gen
 
 ## Records
 
-2026-03-09
+### 2026-03-09
 Asked chatGPT about formatters and linters in neovim.
 It recommended I set up a plugin called "null-ls" - which has been archived for 3 years now...
 
-2026-03-09
+### 2026-03-09
 Asked chatGPT about essential plugins
 It recommended I add a comment package, when all this functionality is already native to nvim
