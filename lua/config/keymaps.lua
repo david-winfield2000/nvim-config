@@ -1,3 +1,6 @@
+-- lazy keymaps
+vim.keymap.set("n", "<leader>l", ":Lazy<CR>", { noremap = true, silent = true })
+
 -- telescope keymaps
 local telescope = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", telescope.find_files, { desc = "Find Files" })
