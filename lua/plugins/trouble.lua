@@ -1,6 +1,11 @@
 return {
 	"folke/trouble.nvim",
-	opts = {},
+	opts = {
+		win = {
+			position = "right",
+			size = 0.25,
+		},
+	},
 	cmd = "Trouble",
 	keys = {
 		{
