@@ -8,14 +8,5 @@ return {
 			"nvim-tree/nvim-web-devicons",
 		},
 		lazy = false,
-		config = function()
-			require("neo-tree").setup({
-				window = {
-					mappings = {
-						["f"] = "none", -- disables search/filter
-					},
-				},
-			})
-		end,
 	},
 }
