@@ -229,3 +229,13 @@ It might read your mind, read your codebase, and match your coding style exactly
 
 Or you might waste your time with it, have wasted keystrokes, time, tokens, and need to yap with it some more to get it to write the code correctly, or just write the code yourself
 
+## Unintended side effects
+
+Often times when you ask an LLM to do something, it will try its best to do it
+
+But the code it writes frequenty ships with unintended side effects
+
+You ask it to do one thing, and now it's also adding another supporting feature that you may not necessarily want
+
+And when you barely understand the underlying thing to begin with, it's hard to figure out what exactly it added
+
