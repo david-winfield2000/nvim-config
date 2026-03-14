@@ -9,9 +9,6 @@ vim.keymap.set("n", "<leader>fg", telescope.live_grep, { desc = "Grep in Files" 
 -- mason keymaps
 vim.keymap.set("n", "<leader>m", ":Mason<CR>", { noremap = true, silent = true })
 
--- neo tree keymaps
-vim.keymap.set("n", "<leader>e", ":Neotree filesystem toggle left<CR>")
-
 -- oil keymaps
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
