@@ -16,7 +16,7 @@ But I've experienced the same thing when building out new features. I need **thi
 
 It's just straight up wrong half the time. And it's easy to find issues with what it recommends doing when you already have some baseline knowledge on the subject.
 
-But when you don't know much on the topic, it's hard to figure out what it's doing right vs wrong.
+But when you don't know much on the topic, it's hard to figure out what it's doing wrong.
 
 And it speaks with so much confidence that you *assume* it's right.
 
@@ -46,7 +46,7 @@ But eventually, as you use something more and more, and start doing more complic
 
 So you use the LLM for every little thing
 
-When if you just sat down to learn how to use the tool yourself, not only would you decrease your reliance on the tool, but you'd be able to spot issues in the future if you decide to keep using LLMs 
+When if you just sat down to learn how to use the tool yourself, not only would you decrease your reliance on an LLM to work with that tool, but you'd be able to spot issues in the future if you decide to keep using LLMs 
 
 ## Metrics: lines of code vs number of queries. Both bad metrics
 
@@ -93,6 +93,16 @@ Refactoring will be a nightmare
 
 ## Overengineered features
 
+When LLMs write code, the features are often overengineered.
+
+You ask for a simple bash script, and suddenly it gives you a bash script with multiple different CLI args, and different ways of doing things, handling different file types, etc.
+
+It tries to do too much 
+
+And that might be fine for one-off scripts
+
+But it's a nightmare to maintain when you are working with a full codebase trying to work on new features
+
 ## Lots of bad code out there, no quality filter with models
 
 There is a lot of bad code out there
@@ -103,6 +113,8 @@ And even if this was a feature, quality is a relative term
 
 A lot of the meaning of the code comes from how it solves a particular problem, but also how it pairs with the rest of the codebase
 
+Perhaps the code that the LLM writes makes sense, in some cases. But if it doesn't fit the coding style or the principles that your team follows when writing code, it gets a bit messy
+
 ## Code makes sense within the context of the problem. But not in the context of the system
 
 When you generate code for a new feature, it might make sense within the context of the problem you were trying to solve
@@ -111,7 +123,7 @@ When you generate code for a new feature, it might make sense within the context
 
 Sure, but does this code make sense in the context of the rest of the system?
 
-As an owner of a fine dining experience, would you ever want to add a dish to your menu that doesn't piar well with the rest of what you have to offer?
+As an owner of a fine dining experience, would you ever want to add a dish to your menu that doesn't pair well with the rest of what you have to offer?
 
 You wouldn't.
 
@@ -139,7 +151,7 @@ LLMs just repurpose existing code
 
 Developers do the same, but we have critical thinking abilities that LLMs do not. No matter how much they try to frame it like they do.
 
-"Thinking deeper" is a load of bogus.
+The "Thinking deeper" functionality that a lot of LLMs claim to support is a load of bullshit.
 
 ## Outdated information
 
@@ -228,6 +240,8 @@ Every query to an LLM is a gamble
 It might read your mind, read your codebase, and match your coding style exactly.
 
 Or you might waste your time with it, have wasted keystrokes, time, tokens, and need to yap with it some more to get it to write the code correctly, or just write the code yourself
+
+Querying an LLM feels like playing a slot machine
 
 ## Unintended side effects
 
