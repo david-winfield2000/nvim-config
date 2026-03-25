@@ -13,6 +13,13 @@ return {
 					},
 				},
 			},
+			keys = {
+				{
+					"<leader>m",
+					":Mason<CR>",
+					desc = "Mason",
+				},
+			},
 		},
 		"neovim/nvim-lspconfig",
 	},

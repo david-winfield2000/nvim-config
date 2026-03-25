@@ -6,15 +6,10 @@ return {
 		-- optional but recommended
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	},
-	config = function()
-		local actions = require("telescope.actions")
-		require("telescope").setup({
-			defaults = {
-				mappings = {
-					i = { ["<C-d>"] = actions.delete_buffer }, -- insert mode
-					n = { ["<C-d>"] = actions.delete_buffer }, -- normal mode
-				},
-			},
-		})
-	end,
+	keys = {
+		{ "<leader>ff", require("telescope.builtin").find_files, desc = "Find files" },
+		{ "<leader>fg", require("telescope.builtin").live_grep, desc = "Live grep" },
+		{ "<leader>fb", require("telescope.builtin").buffers, desc = "Buffers" },
+		{ "<leader>fh", require("telescope.builtin").help_tags, desc = "Help tags" },
+	},
 }
