@@ -6,7 +6,7 @@
 - [Simple refactors](#simple-refactors)
 - [Text-based assistance](#text-based-assistance)
 - [Rubber ducking](#rubber-ducking)
-- [Fancy autocomplete (ghost text)](#fancy-autocomplete-tab-complete-ghost-text)
+- [Fancy autocomplete (tab complete/ghost text)](#fancy-autocomplete-tab-complete-ghost-text)
 
 ## Explaining well-documented topics
 
