@@ -1,5 +1,26 @@
 # Things I've noticed about LLMs
 
+## Table of contents
+
+- [It tries to fix a symptom of the problem vs the underlying issue](#it-tries-to-fix-a-symptom-of-the-problem-vs-the-underlying-issue)
+- [Hallucinations](#hallucinations)
+- [Spec-driven development](#spec-driven-development)
+- [Using an LLM becomes a crutch](#using-an-llm-becomes-a-crutch)
+- [Metrics: evaluating a developer's performance based on their usage of LLMs](#metrics-evaluating-a-developers-performance-based-on-their-usage-of-llms)
+- [Design decisions and edge cases - easier when you write the code](#design-decisions-and-edge-cases-easier-when-you-write-the-code)
+- [Code ownership](#code-ownership)
+- [Overengineered features](#overengineered-features)
+- [No quality filter on code](#no-quality-filter-on-code)
+- [Code makes sense within the context of the problem. But not in the context of the system](#code-makes-sense-within-the-context-of-the-problem-but-not-in-the-context-of-the-system)
+- [Originality](#originality)
+- [Outdated information](#outdated-information)
+- [Unnecessary rabbit holes](#unnecessary-rabbit-holes)
+- [LLM loops](#llm-loops)
+- [Levelling up](#levelling-up)
+- [Overly verbose](#overly-verbose)
+- [Rolling the dice](#rolling-the-dice)
+- [Unintended side effects](#unintended-side-effects)
+
 ## It tries to fix a symptom of the problem vs the underlying issue
 
 I started getting a warning when running my unit tests. Mentioned it to my LLM. It recommended: turning off the warning message.
