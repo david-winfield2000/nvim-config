@@ -5,7 +5,7 @@
 - [Explaining well-documented topics](#explaining-well-documented-topics)
 - [Simple refactors](#simple-refactors)
 - [Text-based assistance](#text-based-assistance)
-- [Bouncing ideas off of](#bouncing-ideas-off-of)
+- [Rubber ducking](#rubber-ducking)
 - [Fancy autocomplete (ghost text)](#fancy-autocomplete-ghost-text)
 
 ## Explaining well-documented topics
@@ -38,7 +38,7 @@ LLM - make a table of contents for this markdown file
 
 This would have taken me a while, but the LLM does it in a few seconds, with a very simple prompt
 
-## Bouncing ideas off of
+## Rubber ducking
 
 Sometimes it's nice to come up with an idea, and ask an LLM if your approach will work
 
@@ -52,7 +52,7 @@ And after doing my own research, those solutions were actually pretty good
 
 ## Fancy autocomplete (ghost text)
 
-My first experience with using an LLM to code in my IDS was with with GitHub copilot
+My first experience with using an LLM to code in my IDE was with with GitHub copilot
 
 Felt like magic!
 
