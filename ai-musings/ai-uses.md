@@ -6,7 +6,7 @@
 - [Simple refactors](#simple-refactors)
 - [Text-based assistance](#text-based-assistance)
 - [Rubber ducking](#rubber-ducking)
-- [Fancy autocomplete (tab complete/ghost text)](#fancy-autocomplete-tab-complete-ghost-text)
+- [Fancy autocomplete](#fancy-autocomplete)
 
 ## Explaining well-documented topics
 
@@ -50,7 +50,7 @@ When I've done this, an LLM has given me ideas on a package I hadn't heard of or
 
 And after doing my own research, those solutions were actually pretty good
 
-## Fancy autocomplete (tab complete/ghost text)
+## Fancy autocomplete
 
 My first experience with using an LLM to code in my IDE was with with GitHub copilot
 
