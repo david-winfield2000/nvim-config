@@ -1,5 +1,13 @@
 # Instances where using LLMs have been incredibly helpful
 
+## Table of contents
+
+- [Explaining well-documented topics](#explaining-well-documented-topics)
+- [Simple refactors](#simple-refactors)
+- [Text-based assistance](#text-based-assistance)
+- [Bouncing ideas off of](#bouncing-ideas-off-of)
+- [Fancy autocomplete (ghost text)](#fancy-autocomplete-ghost-text)
+
 ## Explaining well-documented topics
 
 For topics that are difficult to understand, going back and forth with an LLM is genuinely helpful
@@ -8,13 +16,13 @@ The LLM is able to explain in metaphors, compare to other topics you might be fa
 
 LLMs are a great learning tool, just need to fact check them for more niche topics
 
-## Simple refactors 
+## Simple refactors
 
 Let's say I have a file with a bunch of classes in it
 
 I want to reorganize, and split everything into different files
 
-Asking an LLM to reorganize this is awesome 
+Asking an LLM to reorganize this is awesome
 
 Takes very little time to prompt for a change like this, and saves a lot of typing time
 
@@ -44,9 +52,9 @@ And after doing my own research, those solutions were actually pretty good
 
 ## Fancy autocomplete (ghost text)
 
-My first experience with using an LLM to code in my IDS was with with GitHub copilot 
+My first experience with using an LLM to code in my IDS was with with GitHub copilot
 
-Felt like magic! 
+Felt like magic!
 
 Such a handy way to use AI, as a fancy autocomplete
 
@@ -60,5 +68,6 @@ It felt like I was in the driver's seat, but the LLM helped me fly through writi
 
 I wish it was better at what it did, there were certainly times that it became a nuisance
 
-But it was kind of nice
+I feel like cursor's tab complete/ghost text is a little aggressive
 
+But copilot's was nice
