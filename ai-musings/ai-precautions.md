@@ -270,3 +270,8 @@ You ask it to do one thing, and now it's also adding another supporting feature 
 
 And when the LLM is working with multiple files, it becomes more challenging to figure out what exactly changed
 
+## Limited context windows
+
+As the size of your codebase increases, LLMs are less likely to be able to hold context about the state of your project
+
+So the suggestions an LLM makes will be less and less relevant to your project
