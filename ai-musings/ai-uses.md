@@ -6,7 +6,7 @@
 - [Simple refactors](#simple-refactors)
 - [Text-based assistance](#text-based-assistance)
 - [Rubber ducking](#rubber-ducking)
-- [Fancy autocomplete (ghost text)](#fancy-autocomplete-ghost-text)
+- [Fancy autocomplete (ghost text)](#fancy-autocomplete-tab-complete-ghost-text)
 
 ## Explaining well-documented topics
 
@@ -34,7 +34,7 @@ I'm working on a markdown file, notice that I have a lot of titles to work with,
 
 "I need a Table of Contents!"
 
-LLM - make a table of contents for this markdown file
+"LLM - make a table of contents for this markdown file"
 
 This would have taken me a while, but the LLM does it in a few seconds, with a very simple prompt
 
@@ -50,7 +50,7 @@ When I've done this, an LLM has given me ideas on a package I hadn't heard of or
 
 And after doing my own research, those solutions were actually pretty good
 
-## Fancy autocomplete (ghost text)
+## Fancy autocomplete (tab complete/ghost text)
 
 My first experience with using an LLM to code in my IDE was with with GitHub copilot
 
