@@ -11,5 +11,12 @@ return {
 		{ "<leader>fg", require("telescope.builtin").live_grep, desc = "Live grep" },
 		{ "<leader>fb", require("telescope.builtin").buffers, desc = "Buffers" },
 		{ "<leader>fh", require("telescope.builtin").help_tags, desc = "Help tags" },
+		{
+			"<leader>fc",
+			function()
+				require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") })
+			end,
+			desc = "Find files in neovim config",
+		},
 	},
 }
