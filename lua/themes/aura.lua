@@ -10,8 +10,8 @@ return {
 			vim.cmd([[colorscheme aura-dark]])
 
 			-- line number colors
-			vim.api.nvim_set_hl(0, "LineNr", { fg = "#ffffff" }) -- other lines
-			vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#a277ff" }) -- current line
+			vim.api.nvim_set_hl(0, "LineNr", { fg = "#ffffff" })
+			vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#a277ff" })
 		end,
 	},
 }
