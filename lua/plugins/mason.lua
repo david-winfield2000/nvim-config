@@ -22,4 +22,7 @@ return {
 		},
 		"neovim/nvim-lspconfig",
 	},
+	config = function()
+		require("mason-lspconfig").setup()
+	end,
 }
