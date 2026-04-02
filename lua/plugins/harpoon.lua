@@ -2,9 +2,6 @@ return {
 	"ThePrimeagen/harpoon",
 	branch = "harpoon2",
 	dependencies = { "nvim-lua/plenary.nvim" },
-	config = function()
-		require("harpoon"):setup()
-	end,
 	keys = {
 		{
 			"<leader>a",
@@ -49,17 +46,5 @@ return {
 			end,
 			desc = "Harpoon: select 4",
 		},
-		-- {
-		-- 	"<C-S-P>",
-		-- 	function()
-		-- 		require("harpoon"):list():prev()
-		-- 	end,
-		-- },
-		-- {
-		-- 	"<C-S-N>",
-		-- 	function()
-		-- 		require("harpoon"):list():next()
-		-- 	end,
-		-- },
 	},
 }

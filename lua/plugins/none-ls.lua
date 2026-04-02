@@ -12,7 +12,7 @@ return {
 				null_ls.builtins.completion.spell,
 				null_ls.builtins.formatting.stylua,
 
-				-- Additional options (add below)
+				-- Additional options
 				null_ls.builtins.formatting.prettier,
 				null_ls.builtins.formatting.black,
 				null_ls.builtins.formatting.isort,
@@ -24,7 +24,7 @@ return {
 						group = augroup,
 						buffer = bufnr,
 						callback = function()
-							vim.lsp.buf.format({ bufnr = bufnr, async = false })
+							vim.lsp.buf.formatting_sync()
 						end,
 					})
 				end
