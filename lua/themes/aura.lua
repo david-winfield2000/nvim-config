@@ -2,7 +2,7 @@ return {
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 	{
 		"baliestri/aura-theme",
-		enabled = true,
+		enabled = false,
 		lazy = false,
 		priority = 1000,
 		config = function(plugin)
