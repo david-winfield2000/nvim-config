@@ -10,7 +10,7 @@ vim.opt.expandtab = true
 -- misc
 vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = true
-vim.opt.scrolloff = 3
+vim.opt.scrolloff = 5
 
 -- inline diagnostics
 vim.diagnostic.config({
