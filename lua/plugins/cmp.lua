@@ -33,36 +33,34 @@ return {
 				}),
 			})
 
-			-- cmdline
+			-- Buffer source
 			cmp.setup.cmdline({ "/", "?" }, {
 				mapping = cmp.mapping.preset.cmdline(),
 				sources = { { name = "buffer" } },
 			})
 
+			-- Command line
 			cmp.setup.cmdline(":", {
 				mapping = cmp.mapping.preset.cmdline(),
 				sources = cmp.config.sources({ { name = "path" } }, { { name = "cmdline" } }),
 			})
 
-			-- If you want insert `(` after select function or method item
-			local cmp_autopairs = require("nvim-autopairs.completion.cmp")
-			local cmp = require("cmp")
-			cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
-
-			-- LSP
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			-- Default
+			-- LSP support
 			vim.lsp.config("lua_ls", {
 				capabilities = capabilities,
 			})
-
-			-- Additional lsp support
 			vim.lsp.config("pyright", {
 				capabilities = capabilities,
 			})
 
+			-- Enable LSP
 			vim.lsp.enable({ "lua_ls", "pyright" })
+
+			-- Insert `(` after select function or method item
+			local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+			cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 		end,
 	},
 }
