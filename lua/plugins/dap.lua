@@ -4,8 +4,12 @@ return {
 		vim.api.nvim_set_hl(0, "DapBreakpointSign", { fg = "#f14c4c" })
 		vim.fn.sign_define("DapBreakpoint", { text = "●", texthl = "DapBreakpointSign" })
 
-		-- require dap settings from config/
-		require("config.dap.python")
+		-- use dap for python
+		dap.adapters.python = {
+			type = "executable",
+			command = "python",
+			args = { "-m", "debugpy.adapter" },
+		}
 	end,
 	keys = {
 		{
