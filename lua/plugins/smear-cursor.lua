@@ -20,7 +20,11 @@ local fire_opts = {
 	min_distance_emit_particles = 0,
 }
 
+local blue_only = {
+	cursor_color = "#00ffff",
+}
+
 return {
 	"sphamba/smear-cursor.nvim",
-	opts = {},
+	opts = blue_only,
 }
