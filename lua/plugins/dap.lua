@@ -20,14 +20,14 @@ return {
 			desc = "Continue",
 		},
 		{
-			"<leader>F10",
+			"<leader>F11",
 			function()
 				require("dap").step_into()
 			end,
 			desc = "Step Into",
 		},
 		{
-			"<leader>F11",
+			"<leader>F10",
 			function()
 				require("dap").step_over()
 			end,
