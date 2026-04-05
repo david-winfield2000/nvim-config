@@ -5,8 +5,12 @@ return {
 		"nvim-neotest/nvim-nio",
 	},
 	config = function()
-		-- open and close windows automatically
 		local dap, dapui = require("dap"), require("dapui")
+
+		-- set up dap ui
+		dapui.setup()
+
+		-- open and close windows automatically
 		dap.listeners.before.attach.dapui_config = function()
 			dapui.open()
 		end
@@ -20,4 +24,13 @@ return {
 			dapui.close()
 		end
 	end,
+	keys = {
+		{
+			"<leader>du",
+			function()
+				require("dapui").toggle()
+			end,
+			desc = "Toggle DAP UI",
+		},
+	},
 }
