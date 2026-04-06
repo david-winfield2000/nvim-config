@@ -19,4 +19,13 @@ return {
 			desc = "Find files in neovim config",
 		},
 	},
+	config = function()
+		require("telescope").setup({
+			defaults = {
+				mappings = {
+					n = { ["q"] = require("telescope.actions").close },
+				},
+			},
+		})
+	end,
 }
