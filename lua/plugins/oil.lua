@@ -13,6 +13,11 @@ return {
 			timeout_ms = 1000,
 			autosave_changes = true,
 		},
+		view_options = {
+			is_hidden_file = function(name, bufnr)
+				return name == ".." or name == ".git"
+			end,
+		},
 	},
 	config = function(_, opts)
 		require("oil").setup(opts)
