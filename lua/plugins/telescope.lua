@@ -25,6 +25,11 @@ return {
 				n = { ["q"] = require("telescope.actions").close },
 			},
 		},
+		pickers = {
+			find_files = {
+				find_command = { "rg", "--files", "--hidden", "-g", "!.git" },
+			},
+		},
 	},
 	config = function(_, opts)
 		require("telescope").setup(opts)
