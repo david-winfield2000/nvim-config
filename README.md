@@ -13,8 +13,8 @@ This is my NeoVim configuration that I use for work + school + fun
 - [ ] DAP for debugging
 - [ ] Ensure that imports are updated whenever I change the structure of a project
 - [ ] Oil - behave like neotree (sometimes it's nice to have a sidebar with a file tree)
-- [ ] Oil - hide git ignored files
 - [ ] Streamline the process of LSP management and formatters
+- [x] Oil - hide git ignored files
 - [x] Telescope - ensure "." files show up in file search
 
 ## Tools to assist
