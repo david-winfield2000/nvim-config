@@ -8,11 +8,6 @@ return {
 		{ "-", "<CMD>Oil<CR>", desc = "Open parent directory" },
 	},
 	opts = {
-		lsp_file_methods = {
-			enabled = true,
-			timeout_ms = 1000,
-			autosave_changes = true,
-		},
 		view_options = {
 			is_hidden_file = function(name, bufnr)
 				return name == ".." or name == ".git"
