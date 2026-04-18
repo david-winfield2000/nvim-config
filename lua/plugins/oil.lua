@@ -10,7 +10,11 @@ return {
 	opts = {
 		view_options = {
 			is_hidden_file = function(name, bufnr)
-				return name == ".." or name == ".git"
+				if name == ".." or name == ".git" then
+					return true
+				end
+				local full = require("oil").get_current_dir(bufnr) .. name
+				return vim.fn.system("git check-ignore " .. full) ~= ""
 			end,
 		},
 	},
