@@ -13,9 +13,12 @@ return {
 				if name == ".." or name == ".git" then
 					return true
 				end
-				local full = require("oil").get_current_dir(bufnr) .. name
-				return vim.fn.system("git check-ignore " .. full) ~= ""
 			end,
+		},
+		lsp_file_methods = {
+			enabled = true,
+			timeout_ms = 1000,
+			autosave_changes = true,
 		},
 	},
 	config = function(_, opts)
