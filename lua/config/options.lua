@@ -7,7 +7,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
--- misc
+--
 vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = true
 vim.opt.scrolloff = 5
@@ -18,4 +18,12 @@ vim.diagnostic.config({
 	signs = true,
 	underline = true,
 	update_in_insert = true,
+})
+
+-- dap breakpoint sign
+vim.fn.sign_define("DapBreakpoint", {
+	text = "●",
+	texthl = "DiagnosticError",
+	linehl = "",
+	numhl = "",
 })
