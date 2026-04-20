@@ -5,6 +5,11 @@ return {
 		local dap = require("dap")
 
 		-- Configurations
+		dap.adapters.python = {
+			type = "executable",
+			command = "python",
+			args = { "-m", "debugpy.adapter" },
+		}
 		dap.configurations.python = {
 			{
 				name = "Launch file",
