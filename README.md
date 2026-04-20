@@ -1,6 +1,6 @@
 # What This Repo Is
 
-This is my NeoVim configuration that I use for work + school + fun
+This is my neovim configuration that I use for work + school + fun
 
 ## Goals
 
@@ -10,10 +10,10 @@ This is my NeoVim configuration that I use for work + school + fun
 
 ## Ideas for improvement
 
-- [x] DAP - for debugging
 - [ ] Ensure that imports are updated whenever I change the structure of a project
-- [ ] Streamline the process of LSP management and formatters
+- [x] DAP - for debugging
 - [x] Oil - hide git ignored files
+- [x] Streamline the process of LSP management and formatters
 - [x] Telescope - ensure "." files show up in file search
 
 ## Tools to assist
