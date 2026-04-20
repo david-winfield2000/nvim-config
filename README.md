@@ -10,7 +10,7 @@ This is my NeoVim configuration that I use for work + school + fun
 
 ## Ideas for improvement
 
-- [ ] DAP - for debugging
+- [x] DAP - for debugging
 - [ ] Ensure that imports are updated whenever I change the structure of a project
 - [ ] Streamline the process of LSP management and formatters
 - [x] Oil - hide git ignored files
