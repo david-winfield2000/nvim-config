@@ -8,14 +8,6 @@ This is my neovim configuration that I use for work + school + fun
 2. Make fewer mistakes, and learn
 3. Use neovim as my primary code editor
 
-## Ideas for improvement
-
-- [ ] Ensure that imports are updated whenever I change the structure of a project
-- [x] DAP - for debugging
-- [x] Oil - hide git ignored files
-- [x] Streamline the process of LSP management and formatters
-- [x] Telescope - ensure "." files show up in file search
-
 ## Tools to assist
 
 Tmux (terminal multiplexer) + plugins:
