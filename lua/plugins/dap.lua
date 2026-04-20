@@ -60,12 +60,5 @@ return {
 			desc = "Step Out",
 			remap = false,
 		},
-		{
-			"<leader>dt",
-			function()
-				require("dapui").toggle()
-			end,
-			desc = "Toggle DAP UI",
-		},
 	},
 }
