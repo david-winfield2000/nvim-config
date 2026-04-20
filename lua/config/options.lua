@@ -20,10 +20,16 @@ vim.diagnostic.config({
 	update_in_insert = true,
 })
 
--- dap breakpoint sign
+-- dap signs
 vim.fn.sign_define("DapBreakpoint", {
 	text = "●",
 	texthl = "DiagnosticError",
 	linehl = "",
+	numhl = "",
+})
+vim.fn.sign_define("DapStopped", {
+	text = "▶",
+	texthl = "DapStopped",
+	linehl = "Visual",
 	numhl = "",
 })
