@@ -1,14 +1,14 @@
-# What This Repo Is
+# What this repo is
 
 This is my neovim configuration that I use for work + school + fun
 
 ## Goals
 
-1. Find new ways to be more productive when writing code
-2. Make fewer mistakes, and learn
-3. Use neovim as my primary code editor
+1. Write code by hand faster
+2. Use neovim as my primary editor
+3. Get more comfortable using tools in the CLI
 
-## Tools to assist
+## Tools to assist my workflow
 
 Tmux (terminal multiplexer) + plugins:
 
