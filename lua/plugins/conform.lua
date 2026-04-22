@@ -4,6 +4,7 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			python = { "black", "isort" },
+			markdown = { "prettier" },
 		},
 		format_on_save = {
 			timeout_ms = 500,
