@@ -29,6 +29,13 @@ return {
 			find_files = {
 				find_command = { "rg", "--files", "--hidden", "-g", "!.git" },
 			},
+			buffers = {
+				attach_mappings = function(_, map)
+					map("i", "<C-d>", require("telescope.actions").delete_buffer)
+					map("n", "<C-d>", require("telescope.actions").delete_buffer)
+					return true
+				end,
+			},
 		},
 	},
 	config = function(_, opts)
