@@ -11,7 +11,7 @@ return {
 		view_options = {
 			is_hidden_file = function(name, bufnr)
 				-- normal files
-				if name == ".." or name == ".git" or name:match("%.env") then
+				if name == ".." or name == ".git" then
 					return true
 				end
 
