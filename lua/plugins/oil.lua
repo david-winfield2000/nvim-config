@@ -10,7 +10,13 @@ return {
 	opts = {
 		view_options = {
 			is_hidden_file = function(name, bufnr)
-				if name == ".." or name == ".git" then
+				-- normal files
+				if name == ".." or name == ".git" or name:match("%.env") then
+					return true
+				end
+
+				-- python files
+				if name == "venv" or name == "__pycache__" or name:match("%.pyc") then
 					return true
 				end
 			end,
