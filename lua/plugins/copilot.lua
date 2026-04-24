@@ -10,5 +10,12 @@ return {
 			expr = true,
 			replace_keycodes = false,
 		})
+
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = "markdown",
+			callback = function()
+				vim.b.copilot_enabled = false
+			end,
+		})
 	end,
 }
