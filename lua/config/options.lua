@@ -19,21 +19,3 @@ vim.diagnostic.config({
 	underline = true,
 	update_in_insert = true,
 })
-
--- dap signs
-local aquamarine = "#7FFFD4"
-vim.api.nvim_set_hl(0, "DapBreakpoint", { fg = aquamarine })
-vim.api.nvim_set_hl(0, "DapStopped", { fg = aquamarine })
-
-vim.fn.sign_define("DapBreakpoint", {
-	text = "●",
-	texthl = "DapBreakpoint",
-	linehl = "",
-	numhl = "",
-})
-vim.fn.sign_define("DapStopped", {
-	text = "▶",
-	texthl = "DapStopped",
-	linehl = "Visual",
-	numhl = "",
-})
