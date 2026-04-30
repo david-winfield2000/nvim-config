@@ -9,6 +9,7 @@ return {
 				"isort",
 			},
 			markdown = { "prettier" },
+			typescript = { "prettier" },
 		},
 		format_on_save = {
 			timeout_ms = 2000,
