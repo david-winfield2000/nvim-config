@@ -15,6 +15,11 @@ return {
 					return true
 				end
 
+				-- mac files
+				if name == ".DS_Store" then
+					return true
+				end
+
 				-- python files
 				if name == "venv" or name == "__pycache__" or name:match("%.pyc") then
 					return true
