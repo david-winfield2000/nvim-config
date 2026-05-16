@@ -1,6 +1,13 @@
 -- line number
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.api.nvim_set_hl(0, "LineNr", {
+	fg = "#999999",
+})
+vim.api.nvim_set_hl(0, "CursorLineNr", {
+	fg = "#00D1B2",
+	bold = true,
+})
 
 -- tabs
 vim.opt.tabstop = 4
