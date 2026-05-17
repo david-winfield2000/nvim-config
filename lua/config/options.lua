@@ -5,7 +5,7 @@ vim.api.nvim_set_hl(0, "LineNr", {
 	fg = "#999999",
 })
 vim.api.nvim_set_hl(0, "CursorLineNr", {
-	fg = "#00D1B2",
+	fg = "#00FFFF",
 	bold = true,
 })
 
