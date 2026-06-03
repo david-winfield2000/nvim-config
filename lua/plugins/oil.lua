@@ -8,6 +8,7 @@ return {
 		{ "-", "<CMD>Oil<CR>", desc = "Open parent directory" },
 	},
 	opts = {
+		watch_for_changes = true,
 		view_options = {
 			is_hidden_file = function(name, bufnr)
 				-- normal files
