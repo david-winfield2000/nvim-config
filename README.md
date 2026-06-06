@@ -15,3 +15,15 @@ Tmux (terminal multiplexer) + plugins:
 - tpm - plugin manager
 - tmux-resurrect - restore tmux sessions
 - tmux-continuum - frequently save backups of tmux sessions
+
+## Plugins/features to look into
+
+### Plugins
+
+Flash.nvim
+Harpoon.nvim
+Surround.nvim
+
+### Features
+
+Luasnip = lua snippets, included in lazy.nvim
