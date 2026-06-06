@@ -18,6 +18,7 @@ vim.opt.expandtab = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = true
 vim.opt.scrolloff = 5
+vim.opt.ignorecase = true
 
 -- inline diagnostics
 vim.diagnostic.config({
