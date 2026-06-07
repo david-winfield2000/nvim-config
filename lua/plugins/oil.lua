@@ -41,6 +41,9 @@ return {
 	},
 	opts = {
 		watch_for_changes = true,
+		keymaps = {
+			["<C-l>"] = false,
+		},
 		view_options = {
 			is_hidden_file = function(name, bufnr)
 				if name == ".." then
