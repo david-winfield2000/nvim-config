@@ -27,3 +27,6 @@ vim.diagnostic.config({
 	underline = true,
 	update_in_insert = true,
 })
+
+-- netrw
+vim.g.netrw_bufsettings = "noma nomod nu rnu nobl nowrap ro"
