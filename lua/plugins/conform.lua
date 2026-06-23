@@ -8,10 +8,7 @@ return {
 				"black",
 				"isort",
 			},
-			go = {
-				"gofmt",
-				"goimports",
-			},
+			go = { "gofmt" },
 			markdown = { "prettier" },
 			typescript = { "prettier" },
 			yaml = { "prettier" },
