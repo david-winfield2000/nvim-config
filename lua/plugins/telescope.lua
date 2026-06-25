@@ -18,6 +18,15 @@ return {
 			end,
 			desc = "Find files in neovim config",
 		},
+		{
+			"<leader>fw",
+			function()
+				require("telescope.builtin").live_grep({
+					default_text = vim.fn.expand("<cword>"),
+				})
+			end,
+			desc = "Live grep word under cursor",
+		},
 	},
 	opts = {
 		defaults = {
