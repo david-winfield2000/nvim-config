@@ -54,9 +54,12 @@ return {
 			vim.lsp.config("pyright", {
 				capabilities = capabilities,
 			})
+			vim.lsp.config("gopls", {
+				capabilities = capabilities,
+			})
 
 			-- Enable LSP
-			vim.lsp.enable({ "lua_ls", "pyright" })
+			vim.lsp.enable({ "lua_ls", "pyright", "gopls" })
 
 			-- Insert `(` after select function or method item
 			local cmp_autopairs = require("nvim-autopairs.completion.cmp")
