@@ -1,6 +1,3 @@
--- lazy
-vim.keymap.set("n", "<leader>l", ":Lazy<CR>", { noremap = true, silent = true })
-
 -- quickfix
 vim.keymap.set("n", "<leader>q", ":copen<CR>", { noremap = true, silent = true })
 
