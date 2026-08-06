@@ -3,12 +3,27 @@ return {
 	version = "*",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		-- optional but recommended
-		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+		{
+			"nvim-telescope/telescope-fzf-native.nvim",
+			build = "make",
+		},
 	},
+
 	keys = {
-		{ "<leader>ff", require("telescope.builtin").find_files, desc = "Find files" },
-		{ "<leader>fg", require("telescope.builtin").live_grep, desc = "Live grep" },
+		{
+			"<leader>ff",
+			function()
+				require("telescope.builtin").find_files()
+			end,
+			desc = "Find files",
+		},
+		{
+			"<leader>fg",
+			function()
+				require("telescope.builtin").live_grep()
+			end,
+			desc = "Live grep",
+		},
 		{
 			"<leader>fb",
 			function()
@@ -19,13 +34,21 @@ return {
 			end,
 			desc = "Buffers",
 		},
-		{ "<leader>fh", require("telescope.builtin").help_tags, desc = "Help tags" },
+		{
+			"<leader>fh",
+			function()
+				require("telescope.builtin").help_tags()
+			end,
+			desc = "Help tags",
+		},
 		{
 			"<leader>fc",
 			function()
-				require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") })
+				require("telescope.builtin").find_files({
+					cwd = vim.fn.stdpath("config"),
+				})
 			end,
-			desc = "Find files in neovim config",
+			desc = "Find files in Neovim config",
 		},
 		{
 			"<leader>fw",
@@ -37,26 +60,38 @@ return {
 			desc = "Live grep word under cursor",
 		},
 	},
-	opts = {
-		defaults = {
-			mappings = {
-				n = { ["q"] = require("telescope.actions").close },
+
+	opts = function()
+		local actions = require("telescope.actions")
+
+		return {
+			defaults = {
+				mappings = {
+					n = {
+						["q"] = actions.close,
+					},
+				},
 			},
-		},
-		pickers = {
-			find_files = {
-				find_command = { "rg", "--files", "--hidden", "-g", "!.git" },
+			pickers = {
+				find_files = {
+					find_command = { "rg", "--files", "--hidden", "-g", "!.git" },
+				},
+				buffers = {
+					attach_mappings = function(_, map)
+						map("i", "<C-d>", actions.delete_buffer)
+						map("n", "<C-d>", actions.delete_buffer)
+						return true
+					end,
+				},
 			},
-			buffers = {
-				attach_mappings = function(_, map)
-					map("i", "<C-d>", require("telescope.actions").delete_buffer)
-					map("n", "<C-d>", require("telescope.actions").delete_buffer)
-					return true
-				end,
-			},
-		},
-	},
+		}
+	end,
+
 	config = function(_, opts)
-		require("telescope").setup(opts)
+		local telescope = require("telescope")
+
+		telescope.setup(opts)
+
+		pcall(telescope.load_extension, "fzf")
 	end,
 }
