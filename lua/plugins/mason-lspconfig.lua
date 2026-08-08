@@ -10,7 +10,6 @@ return {
 			"stylua",
 			"pyright",
 			"bashls",
-			"gopls",
 		},
 	},
 	config = function(_, opts)
