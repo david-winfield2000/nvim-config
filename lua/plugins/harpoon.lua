@@ -35,13 +35,12 @@ return {
 			harpoon:list():select(4)
 		end)
 
-		-- -- Harpoon next/previous
-		-- vim.keymap.set("n", "<leader>p", function()
-		-- 	harpoon:list():prev()
-		-- end)
-		--
-		-- vim.keymap.set("n", "<leader>n", function()
-		-- 	harpoon:list():next()
-		-- end)
+		-- Harpoon next/previous
+		vim.keymap.set("n", "<leader>p", function()
+			harpoon:list():prev()
+		end)
+		vim.keymap.set("n", "<leader>n", function()
+			harpoon:list():next()
+		end)
 	end,
 }
