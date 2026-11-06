@@ -1,6 +1,6 @@
 {
   "catppuccin": { "branch": "main", "commit": "edefef779ab08ce1a4a404713e3012b0d202bd35" },
-  "claude-nvim": { "branch": "main", "commit": "b4b873e8700f6384790358b4fdcf2ce32b2aee0e" },
+  "claude-nvim": { "branch": "main", "commit": "910c39eb5293cffbc678fb2e28fea1b66a7c46d1" },
   "cmp-buffer": { "branch": "main", "commit": "b74fab3656eea9de20a9b8116afa3cfc4ec09657" },
   "cmp-cmdline": { "branch": "main", "commit": "d126061b624e0af6c3a556428712dd4d4194ec6d" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "cd4ee08a988deb47ac3726f418fb27fe1a95729d" },
