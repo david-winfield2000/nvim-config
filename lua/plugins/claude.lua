@@ -1,5 +1,5 @@
 return {
-	dir = "~/Documents/claude.nvim",
+	"david-winfield2000/claude-nvim",
 	opts = {
 		-- [key] = { model = required, prompt = omit to be asked each time, desc = optional }
 		commands = {
