@@ -12,10 +12,6 @@ return {
 		},
 		config = function()
 			local cmp = require("cmp")
-			vim.keymap.set("i", "<A-y>", function()
-				require("config.hunks").accept(true)
-			end, { desc = "Accept all ghost text" })
-
 			cmp.setup({
 				snippet = {
 					expand = function(args)
@@ -27,14 +23,9 @@ return {
 					["<C-f>"] = cmp.mapping.scroll_docs(4),
 					["<C-Space>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
-					["<S-Tab>"] = cmp.mapping(function(fallback)
-						if not require("config.hunks").skip() then
-							fallback()
-						end
-					end, { "i", "s" }),
 					["<Tab>"] = cmp.mapping(function(fallback)
 						if require("minuet.virtualtext").action.is_visible() then
-							require("config.hunks").accept()
+							require("minuet.virtualtext").action.accept()
 						elseif cmp.visible() then
 							cmp.confirm({ select = true })
 						else
