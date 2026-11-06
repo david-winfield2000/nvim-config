@@ -19,6 +19,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = true
 vim.opt.scrolloff = 5
 vim.opt.ignorecase = true
+vim.g.loaded_python3_provider = 0 -- skip slow python provider probe
 
 -- inline diagnostics
 vim.diagnostic.config({
