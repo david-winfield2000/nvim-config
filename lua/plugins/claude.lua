@@ -34,6 +34,7 @@ return {
 				model = "qwen3.5-16k",
 				whole_file = true,
 				ollama = true,
+				lsp = true,
 				desc = "Ollama: fix file",
 				prompt = "Quick-fix the file: fix bugs and typos, complete unfinished code (TODOs, stubs, "
 					.. "missing pieces), and wire it up to the surrounding file (use existing names, imports, and "
