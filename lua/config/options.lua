@@ -21,6 +21,9 @@ vim.opt.scrolloff = 5
 vim.opt.ignorecase = true
 vim.g.loaded_python3_provider = 0 -- skip slow python provider probe
 
+-- skip slow python provider probe
+vim.g.loaded_python3_provider = 0
+
 -- inline diagnostics
 vim.diagnostic.config({
 	virtual_text = true,
