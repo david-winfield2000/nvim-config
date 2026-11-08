@@ -24,9 +24,7 @@ return {
 					["<C-Space>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
 					["<Tab>"] = cmp.mapping(function(fallback)
-						if require("minuet.virtualtext").action.is_visible() then
-							require("minuet.virtualtext").action.accept()
-						elseif cmp.visible() then
+						if cmp.visible() then
 							cmp.confirm({ select = true })
 						else
 							fallback()
