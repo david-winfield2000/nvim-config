@@ -13,6 +13,11 @@ return {
 		--   desc = "My command",    -- optional: keymap description
 		-- },
 		commands = {
+			["<leader>cf"] = {
+				model = "haiku",
+				prompt = "Fill this pseudocode with real working code",
+				desc = "Claude Haiku: fill pseudocode",
+			},
 			["<leader>ch"] = {
 				model = "haiku",
 				desc = "Claude Haiku: custom prompt",
