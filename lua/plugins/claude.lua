@@ -1,5 +1,5 @@
 return {
-	dir = vim.fn.expand("~/Documents/claude-nvim"),
+	"david-winfield2000/claude-nvim",
 	name = "claude-nvim",
 	opts = {
 		-- Each entry maps a key to a command (works in normal and visual mode):
