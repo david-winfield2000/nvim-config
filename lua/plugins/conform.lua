@@ -12,6 +12,8 @@ return {
 				"gofmt",
 				"goimports",
 			},
+			c = { "clang-format" },
+			cpp = { "clang-format" },
 			["_"] = { "prettier" },
 		},
 		format_on_save = {
