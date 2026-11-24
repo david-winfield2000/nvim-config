@@ -13,3 +13,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true })
 vim.keymap.set("n", "G", "Gzz", { noremap = true, silent = true })
 vim.keymap.set("n", "n", "nzz", { noremap = true, silent = true })
 vim.keymap.set("n", "N", "Nzz", { noremap = true, silent = true })
+
+-- build and run current cpp file
+vim.keymap.set("n", "<leader>b", ":w<CR>:botright 15split | term g++ -std=c++20 % -o %:r && ./%:r<CR>", { desc = "Build and run" })
