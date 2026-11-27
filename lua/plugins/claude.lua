@@ -16,6 +16,7 @@ return {
 			["<leader>cf"] = {
 				model = "haiku",
 				prompt = "Fill this pseudocode with real working code",
+				whole_file = true,
 				desc = "Claude Haiku: fill pseudocode",
 			},
 			["<leader>ch"] = {
